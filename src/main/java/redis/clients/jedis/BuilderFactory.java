@@ -184,13 +184,6 @@ public final class BuilderFactory {
       }
       List<byte[]> l = (List<byte[]>) data;
       final Set<byte[]> result = new LinkedHashSet<byte[]>(l);
-      for (final byte[] barray : l) {
-        if (barray == null) {
-          result.add(null);
-        } else {
-          result.add(barray);
-        }
-      }
       return result;
     }
 
